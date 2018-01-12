@@ -182,3 +182,103 @@ clear:both;
 	box-shadow: 180px 0 0 0 #252525 inset;
 
 }
+/*ATE ONDE MAURICIO FEZ*/
+.locais{
+	max-width: 960px;
+	margin: 0 auto;
+	padding:20px 0;
+}
+.locais-item{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.locais-item img{
+	margin: 0 10px;
+}
+.locais-item h2{
+	margin: 0 10px;
+}
+.locais-item p{
+	margin: 0 10px;
+}
+.locais-item a{
+	float: left;
+	display: block;
+	width: 180px;
+	text-transform: uppercase;
+	border:3px solid #252525;
+	color:#252525;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.125em;
+	text-align: center;
+	padding:15px 0px;
+	margin:20px auto;
+}
+.locais-item img, .locais-item h2, .locais-item p{
+	float:left;
+	width:460px;
+	display:block;
+
+}
+.locais-item::after, .locais-item::before{
+	display:table;
+	content:'';
+	clear:both;
+}
+.assine{
+	background: #d6d3c8;
+}
+.assine h2{
+	color:black;
+	text-decoration: none;
+	font-size: 2.25em;
+}
+.assine p{
+	list-style: none;
+	font-size: 1.125em;
+}
+.assine-container{
+	max-width: 920px;
+	padding:15px;
+	margin:0 auto;
+}
+.assine label{
+	display: none;
+}
+.assine-info{
+	width: 460px;
+	margin: 0 10px;
+	float: left;
+}
+.assine-container input{
+	display: block;
+	width: 180px;
+	text-transform: uppercase;
+	border:3px solid #252525;
+	color:#252525;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.125em;
+	text-align: center;
+	padding:15px 0px;
+	margin:20px auto;
+}
+.assine-container button{
+	background: black;
+	display: block;
+	width: 180px;
+	text-transform: uppercase;
+	border:3px solid #252525;
+	color:white;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.125em;
+	text-align: center;
+	padding:15px 0px;
+	margin:20px auto;
+}
+.assine form{
+	float: left;
+	width: 460px;
+}
