@@ -1,0 +1,383 @@
+*,h1,h2,h3,h4,h5,h6,p,ul,img,div,li {
+	margin:0;
+	padding: 0;
+	}
+
+.menu{
+	background-color: #252525;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	}
+
+
+.menu a{
+	color: white;
+	text-decoration: none;
+	}
+
+.menu li{
+	list-style: none;
+}
+
+.menu-container {
+	margin: 0 auto;
+	max-width: 920px;
+	padding: 15px;
+}
+
+.menu-container::after, .menu-container::before{ /* cria dois pseudo-elementos, um antes e um depois do menu-container para ter o clear antes e depois do float */
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.menu-nav{
+	float: right;
+}
+
+.menu-nav li{
+	display: inline-block; /* block: um elemento abaixo do outro (cada elemento ocupa uma linha diferente) | inline-block: todos os elementos permanecem em uma só linha */
+}
+
+.menu-nav li a{
+	padding: 15px;
+	display: block;
+}
+
+.intro{
+	padding: 150px 0px;
+	text-align: center;
+	background: url("../img/bg-intro.jpg")no-repeat center center; /* deve voltar uma pasta para poder entrar na pasta "img" | comando para voltar: ../Nome da Pasta */
+	background-size: cover;
+	color: #FFFFFF;
+}
+
+.intro h1{
+	text-transform: uppercase;
+	font-size: 3em; /* 1em = 16px | A unidade "em" é utilizada para que pessoas que possuem problemas de visão consigam acessar o site sem dificuldades */
+}
+
+.intro h1::after{ /* desenha o "traço" após o h1 usando pseudo-elemento */
+	content: "";
+	color: white;
+	display:block;
+	width: 20px;
+	height: 4px;
+	background: #FFFFFF;
+	margin: 10px auto;
+	transition: 1s;
+
+}
+
+.intro h1:hover::after{
+	width: 300px;
+}
+
+.intro p{
+	font-size: 1.125em;
+	font-style: italic;
+}
+
+.sobre {
+	padding: 60px 0;
+}
+
+.sobre h2{
+	padding-bottom: 60px;
+	text-align: center;
+	font-size: 2.25em;
+}
+
+.sobre-container{
+	margin: 0 auto;
+	max-width:960px;
+}
+
+.sobre-container::after, .sobre-container::before{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+
+.sobre-item{
+	max-width: 460px;
+	float: left;
+	margin: 0 10px;
+}
+
+.sobre-item h3{
+	font-size: 2.25em;
+	background: #252525;
+	width: 220px;
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: 400;
+	font-style: italic;
+	padding: 5px 0;
+	top: -30px;
+	position: relative;
+}
+
+.sobre p{
+	font-size: 1.125em;
+	max-width: 460px;
+	margin: 20px auto;
+	text-align: center;
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+.produtos{
+	background: #e7e4d8;
+	padding: 60px 0;
+	border-top: 3px solid #d6d3c8;
+	border-bottom: 3px solid #d6d3c8;
+}
+
+.produtos-container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.produtos-container::after, .produtos-container::before{
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.produtos-item{
+	width: 300px;
+	float: left;
+	margin: 0 10px;
+}
+
+.produtos-item h2{
+	text-align: center;
+	font-size: 2.25em;
+	margin-bottom: 20px;
+}
+
+.produtos-item p{
+	font-size: 0.875em;
+	line-height: 1.4em;
+}
+
+.produtos-item h2::before{
+	content:"";
+	display:block;
+	width: 100px;
+	height: 100px;
+	background: currentColor; /* currentColor é uma variável do css que utiliza a cor atual de cada uma das class que utiliza o pseudo-elemento */
+	border-radius: 50%;
+	border: 5px solid #e7e4d8;
+	box-shadow: 0 0 0 5px currentColor;
+	margin: 20px auto;
+}
+
+
+.produtos-paulista::before{
+	color: #492901;
+}
+
+.produtos-carioca::before{
+	color: #C17139;
+}
+
+.produtos-mineiro::before{
+	color: #d7a54d;
+}
+
+.produtos-btn{
+	display: block;
+	width: 180px;
+	text-transform: uppercase;
+	border: 3px solid #252525;
+	color: #252525;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.125em;
+	text-align: center;
+	padding: 15px 0;
+	margin: 20px auto;
+	transition: 0.5s background-color;
+}
+
+.produtos-btn:hover{
+	color: #e7e4d8;
+	transition: 0.5s;
+	box-shadow: 180px 0 0 0 #252525 inset;
+
+}
+
+.locais {
+		padding: 20px 0;
+		max-width: 920px;
+		margin: 0 auto;
+}
+
+.locais-item{
+	margin: 40px auto;
+	max-width:840px;
+	max-height: 260px;
+}
+
+.locais-texto h2{
+	font-size: 2.25em;
+	margin: 0 25px;
+	color: #252525;
+}
+
+.locais p{
+	margin: 10px 25px;
+	max-width: 330px;
+}
+
+.locais-texto{
+	float: right;
+	margin: -9px auto;
+}
+
+.locais-texto::after, .locais-texto::before{
+	display: table;
+	content: '';
+	clear: both;
+}
+
+
+.locais a{
+	display: block;
+	width: 180px;
+	text-transform: uppercase;
+	border: 3px solid #252525;
+	color: #252525;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.125em;
+	text-align: center;
+	padding: 10px 0;
+	margin: 10px 25px;
+	transition: 0.5s background-color;
+}
+
+.locais a:hover{
+	color: #e7e4d8;
+	transition: 0.5s;
+	box-shadow: 180px 0 0 0 #252525 inset;
+
+}
+
+.assine{
+	background: #e7e5d8;
+	margin: 0;
+	padding: 60px;
+	font-family: georgia;
+}
+
+.assine-container{
+	margin: 0 auto;
+	margin-top: -10px;
+	max-width:920px;
+
+}
+
+.assine-info{
+	float: left;
+	margin: -5px auto;
+}
+
+.assine-info::after, .assine-info::before{
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.assine-info h2{
+	font-size: 2.25em;
+	color: #252525;
+	font-weight: bold;
+
+}
+.assine-info p{
+	font-size: 1.5em;
+	color: #252525;
+	text-align: left;
+	font-style: italic;
+	position: relative;
+	padding: 5px 0;
+
+}
+
+.pesquisa{
+		margin: 0 auto;
+}
+
+.pesquisa-barra{
+	border: 3px solid #252525;
+	width: 265px;
+	padding: 15px 20px;
+	margin-left: 25px;
+	font-size: 1.125em;
+	background-color: #e7e4d8;
+	font-style: italic;
+	font-family: georgia;
+	float:left;
+}
+
+
+.pesquisa-barra::after, .pesquisa-barra::before{
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.pesquisa-barra-btn{
+	display: block;
+	width: 130px;
+	text-transform: uppercase;
+	border: 3px solid #252525;
+	background-color: #252525;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 1.125em;
+	text-align: center;
+	padding: 15px 0;
+	font-family: georgia;
+}
+
+
+
+
+.footer{
+	background: #d6d4c8;
+	padding: 40px;
+}
+
+.footer-container{
+		width: 920px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		line-height: 1.4em;
+
+}
+
+.footer-container p{
+	float: left;
+}
+
+.footer-container p::after, .footer-container p::before{
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.footer-container img{
+	float: right;
+}
+
+.footer-container img::after, .footer-container img::before{
+	display: table;
+	content: '';
+	clear: both;
+}
