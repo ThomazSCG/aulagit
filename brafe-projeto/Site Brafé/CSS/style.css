@@ -81,6 +81,8 @@
 
 .sobre {
 	padding: 60px 0;
+	opacity:0;
+	transition: 1.0s;
 }
 
 .sobre h2{
@@ -212,9 +214,10 @@
 }
 
 .locais {
-		padding: 20px 0;
-		max-width: 920px;
-		margin: 0 auto;
+	margin: 0 auto;
+	opacity: 0;
+	transition:1.0s;
+
 }
 
 .locais-item{
@@ -380,4 +383,8 @@
 	display: table;
 	content: '';
 	clear: both;
+}
+.aparecer {
+	opacity:1;
+	transition: 1.0s;
 }
